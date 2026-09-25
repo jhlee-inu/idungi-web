@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>춘천쌍둥이닭갈비 본점 매장 위치 | 카카오맵</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;padding:0;width:100%;background:#f4f5f2;font-family:Arial,'Malgun Gothic',sans-serif}.root_daum_roughmap{width:100%!important;box-sizing:border-box!important}.root_daum_roughmap .wrap_map{width:100%!important}.map-fallback{position:absolute;inset:0;margin:0;min-height:360px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center;font-size:14px;line-height:1.8;color:#444;z-index:0}.map-fallback a{color:#222;display:inline-block;padding:10px 14px;margin-top:12px;background:#fee500;text-decoration:none}.root_daum_roughmap{position:relative;z-index:1}.map-fallback[hidden]{display:none}
+</style>
+</head>
+<body>
+<p class="map-fallback" id="map-fallback" role="status"><span id="map-message">카카오맵을 불러오고 있어요.</span><a href="https://place.map.kakao.com/27383246" target="_blank" rel="noopener noreferrer">카카오맵에서 매장 보기</a></p>
+<div id="daumRoughmapContainer1790174783468" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+<!-- Official embed generated for Kakao place 27383246. These public embed identifiers are not an API secret. -->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://t1.kakaocdn.net/kakaomapweb/roughmap/loader/prod/roughmapLoader.js"></script>
+<script>
+(function () {
+  'use strict';
+  const container = document.getElementById('daumRoughmapContainer1790174783468');
+  const fallback = document.getElementById('map-fallback');
+  const message = document.getElementById('map-message');
+  let width = 0;
+  let timer;
+  function renderMap() {
+    if (!window.daum || !window.daum.roughmap || !window.daum.roughmap.Lander) {
+      message.textContent = '지도를 불러오지 못했어요. 카카오맵에서 위치를 확인해 주세요.';
+      return;
+    }
+    const nextWidth = Math.max(240, Math.round(document.documentElement.clientWidth));
+    if (nextWidth === width && container.childElementCount) return;
+    width = nextWidth;
+    container.replaceChildren();
+    try {
+      new window.daum.roughmap.Lander({timestamp:'1790174783468',key:'v8ipyb7yg2a',mapWidth:String(width),mapHeight:'360'}).render();
+    } catch (_) {
+      message.textContent = '지도를 불러오지 못했어요. 카카오맵에서 위치를 확인해 주세요.';
+    }
+  }
+  window.addEventListener('load', renderMap, {once:true});
+  window.addEventListener('resize', function () { clearTimeout(timer); timer = setTimeout(renderMap, 250); });
+  setTimeout(function () {
+    if (!container.querySelector('.wrap_map')) message.textContent = '지도 연결이 지연되고 있어요. 카카오맵에서 바로 확인할 수 있어요.';
+    else fallback.hidden = true;
+  }, 15000);
+})();
+</script>
+</body>
+</html>

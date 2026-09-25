@@ -1,0 +1,294 @@
+{
+  "brand": "이둥이네 닭갈비",
+  "previousName": "쌍둥이닭갈비",
+  "since": "2015",
+  "area": "경기도 화성시 새솔동",
+  "address": "경기도 화성시 만세구 꽃내음1길 25 더원파크뷰 2층 206호",
+  "phone": null,
+  "hours": "평일 10:30–22:00 · 브레이크타임 14:30–16:30\n주말 11:30–22:00 · 라스트오더 21:00\n매주 화요일 정기휴무",
+  "mapUrl": "https://place.map.kakao.com/27383246",
+  "parking": "건물 앞 수노을공원 공영주차장 이용 · 요금·지원 여부 확인 예정",
+  "menuNotice": "가격·중량·주문 안내는 제공 메뉴판 기준입니다.",
+  "menus": [
+    {
+      "id": "original",
+      "name": "원조 닭갈비",
+      "category": "dakgalbi",
+      "label": "ORIGINAL",
+      "description": "철판 위에서 어우러지는 닭고기와 매콤달콤한 양념.",
+      "detail": "원조 닭갈비 1인분 230g. 순한맛·중간맛·매운맛 중 선택할 수 있습니다. 제공 메뉴판 기준 16,000원입니다. 사리는 최초 주문 시 함께 주문해 주세요.",
+      "price": 16000,
+      "image": "assets/dakgalbi.webp",
+      "imageClass": "original",
+      "imageAlt": "붉은 양념의 철판 닭갈비를 표현한 AI 시안 이미지",
+      "confirmed": true,
+      "priceUnit": "1인분 · 230g",
+      "priceSource": "제공 메뉴판 기준"
+    },
+    {
+      "id": "cheese",
+      "name": "치즈 닭갈비",
+      "category": "dakgalbi",
+      "label": "CHEESE",
+      "description": "매콤함에 고소함을 더하는 한 입.",
+      "detail": "치즈 닭갈비 1인분 230g. 순한맛·중간맛·매운맛 중 선택할 수 있습니다. 제공 메뉴판 기준 17,000원입니다. 사진은 실제 메뉴 사진이 아닌 AI 시안입니다.",
+      "price": 17000,
+      "image": "assets/sides.webp",
+      "imageClass": "cheese",
+      "imageAlt": "치즈 닭갈비를 표현한 AI 시안 이미지",
+      "confirmed": true,
+      "priceSource": "제공 메뉴판 기준",
+      "priceUnit": "1인분 · 230g"
+    },
+    {
+      "id": "mushroom",
+      "name": "버섯 닭갈비",
+      "category": "dakgalbi",
+      "label": "MUSHROOM",
+      "description": "닭갈비에 버섯을 더해 즐기는 한 판.",
+      "detail": "버섯 닭갈비 1인분 120g+230g. 순한맛·중간맛·매운맛 중 선택할 수 있습니다. 제공 메뉴판 기준 18,000원입니다.",
+      "price": 18000,
+      "image": "assets/dakgalbi.webp",
+      "imageClass": "original",
+      "imageAlt": "닭갈비 공통 AI 연출 이미지, 해당 메뉴의 실제 사진이 아닙니다",
+      "imageCaption": "닭갈비 공통 AI 연출 이미지 · 해당 메뉴의 실제 사진이 아닙니다",
+      "confirmed": true,
+      "priceUnit": "1인분 · 120g+230g",
+      "priceSource": "제공 메뉴판 기준"
+    },
+    {
+      "id": "combo",
+      "name": "닭발&닭갈비",
+      "category": "dakgalbi",
+      "label": "TWO FAVORITES",
+      "description": "닭발과 닭갈비, 두 가지를 함께.",
+      "detail": "닭발&닭갈비 1인분 120g+230g. 순한맛·중간맛·매운맛 중 선택할 수 있습니다. 제공 메뉴판 기준 18,000원입니다.",
+      "price": 18000,
+      "image": "assets/dakgalbi.webp",
+      "imageClass": "original",
+      "imageAlt": "닭갈비 공통 AI 연출 이미지, 해당 메뉴의 실제 사진이 아닙니다",
+      "imageCaption": "닭갈비 공통 AI 연출 이미지 · 해당 메뉴의 실제 사진이 아닙니다",
+      "confirmed": true,
+      "priceUnit": "1인분 · 120g+230g",
+      "priceSource": "제공 메뉴판 기준"
+    },
+    {
+      "id": "rice",
+      "name": "마무리 볶음밥",
+      "category": "side",
+      "label": "THE FINISH",
+      "description": "맛있는 시간의 마무리, 한 숟갈 더.",
+      "detail": "제공 메뉴판 기준 볶음밥 2,500원. 고객 후기에서는 양념이 밴 밥과 철판에 눌어붙은 바삭한 식감을 소개합니다. 닭발볶음밥은 별도 메뉴로 3,500원입니다.",
+      "price": 2500,
+      "image": "assets/sides.webp",
+      "imageClass": "rice",
+      "imageAlt": "닭갈비 볶음밥을 표현한 AI 시안 이미지",
+      "confirmed": true,
+      "priceSource": "제공 메뉴판 기준",
+      "priceUnit": null
+    }
+  ],
+  "references": [
+    {
+      "label": "기존 매장 메뉴 참고 · 다이닝코드",
+      "url": "https://www.diningcode.com/profile.php?rid=eFJoVhFbHLKp"
+    },
+    {
+      "label": "기존 치즈 닭갈비 방문 기록",
+      "url": "https://verificationkr.tistory.com/535"
+    }
+  ],
+  "storeInfoSource": "주소·영업시간·주차는 2026.07.25 고객 후기 기준이며, 현재 운영 정보는 매장 확인 전입니다.",
+  "history": {
+    "origin": "한대앞",
+    "current": "새솔동",
+    "source": "매장 운영자 직접 제공"
+  },
+  "franchise": {
+    "status": "preparing",
+    "contact": null
+  },
+  "mealKit": {
+    "status": "planned",
+    "saleUrl": null
+  },
+  "review": {
+    "author": "간단한",
+    "date": "2026-07-25",
+    "title": "[화성] 또또또간집! 춘천쌍둥이닭갈비 (내돈내산)",
+    "url": null,
+    "source": "사용자가 제공한 블로그 본문",
+    "isSummary": true
+  },
+  "menuPhotoSource": {
+    "name": "사용자가 제공한 매장 메뉴판 사진",
+    "photoDate": null,
+    "note": "텍스트만 반영. 원본 사진과 와이파이 접속 정보는 게시하지 않음."
+  },
+  "catalog": [
+    {
+      "title": "닭갈비",
+      "items": [
+        {
+          "name": "원조 닭갈비",
+          "price": 16000,
+          "unit": "1인분 · 230g"
+        },
+        {
+          "name": "치즈 닭갈비",
+          "price": 17000,
+          "unit": "1인분 · 230g"
+        },
+        {
+          "name": "버섯 닭갈비",
+          "price": 18000,
+          "unit": "1인분 · 120g+230g"
+        },
+        {
+          "name": "닭발&닭갈비",
+          "price": 18000,
+          "unit": "1인분 · 120g+230g"
+        }
+      ]
+    },
+    {
+      "title": "사이드 & 밥류",
+      "items": [
+        {
+          "name": "청정무뼈닭발볶음",
+          "price": 14000,
+          "unit": "230g"
+        },
+        {
+          "name": "파송송 계란탕",
+          "price": 5000,
+          "unit": null
+        },
+        {
+          "name": "구수한 누룽지탕",
+          "price": 5000,
+          "unit": null
+        },
+        {
+          "name": "닭발볶음밥",
+          "price": 3500,
+          "unit": null
+        },
+        {
+          "name": "볶음밥",
+          "price": 2500,
+          "unit": null
+        },
+        {
+          "name": "공깃밥",
+          "price": 1500,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "title": "사리",
+      "items": [
+        {
+          "name": "닭고기 사리",
+          "price": 12000,
+          "unit": "230g"
+        },
+        {
+          "name": "버섯 사리",
+          "price": 4000,
+          "unit": null
+        },
+        {
+          "name": "고구마 사리",
+          "price": 3500,
+          "unit": null
+        },
+        {
+          "name": "치즈 사리",
+          "price": 3500,
+          "unit": null
+        },
+        {
+          "name": "떡 사리",
+          "price": 2500,
+          "unit": null
+        },
+        {
+          "name": "우동 사리",
+          "price": 2500,
+          "unit": null
+        },
+        {
+          "name": "쫄면 사리",
+          "price": 2500,
+          "unit": null
+        },
+        {
+          "name": "라면 사리",
+          "price": 2500,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "title": "주류 & 음료",
+      "items": [
+        {
+          "name": "소주",
+          "price": 5000,
+          "unit": null
+        },
+        {
+          "name": "맥주",
+          "price": 5000,
+          "unit": null
+        },
+        {
+          "name": "청하",
+          "price": 5500,
+          "unit": null
+        },
+        {
+          "name": "막걸리",
+          "price": 4000,
+          "unit": null
+        },
+        {
+          "name": "느린마을 증류주",
+          "price": 5500,
+          "unit": null
+        },
+        {
+          "name": "사이다",
+          "price": 2000,
+          "unit": null
+        },
+        {
+          "name": "코카콜라",
+          "price": 2000,
+          "unit": null
+        },
+        {
+          "name": "환타 파인",
+          "price": 2000,
+          "unit": null
+        },
+        {
+          "name": "식혜",
+          "price": 2000,
+          "unit": null
+        }
+      ]
+    }
+  ],
+  "orderNotes": [
+    "닭갈비 맵기: 순한맛 · 중간맛 · 매운맛 중 선택",
+    "사리는 최초 주문 시 함께 주문해 주세요.",
+    "추가 주문은 2인분 이상 가능하며, 약 20분 소요 예정입니다.",
+    "포장은 2인분 이상 가능합니다."
+  ],
+  "mapPlaceName": "춘천쌍둥이닭갈비 본점",
+  "mapDirectionsUrl": "https://map.kakao.com/link/to/27383246",
+  "mapSource": "카카오맵 장소 상세 페이지에서 주소 대조 후 공식 약도 생성"
+}
