@@ -26,7 +26,7 @@ footer{background:#20211f;color:#fff;padding:52px max(56px,calc((100% - 1280px)/
    Crop only empty margins and separate the symbol from the wordmark through layout. */
 .brand{width:auto;height:108px;overflow:visible}
 .brand-lockup{--logo-unit:1px;display:inline-flex;align-items:center;gap:28px;flex:none}
-.logo-symbol,.logo-wordmark{display:block;flex:none;background-image:url('assets/idungi-logo.png');background-repeat:no-repeat;background-size:319.32px 159.66px;filter:contrast(1.08)}
+.logo-symbol,.logo-wordmark{display:block;flex:none;background-image:url('/assets/idungi-logo.png');background-repeat:no-repeat;background-size:319.32px 159.66px;filter:contrast(1.08)}
 .logo-symbol{width:163.8px;height:90px;background-position:-9px -39.6px;clip-path:polygon(0 0,89% 0,89% 62%,100% 62%,100% 100%,0 100%)}
 .logo-wordmark{width:148.5px;height:71.1px;background-position:-156.6px -56.16px;clip-path:polygon(0 0,100% 0,100% 100%,19% 100%,19% 56%,0 56%)}
 .header-inner{height:124px;gap:30px}
