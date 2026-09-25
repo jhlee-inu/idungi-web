@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import KakaoMap from "./KakaoMap.jsx";
+import VisitGallery from "./VisitGallery.jsx";
 
 function StoreIcon({ type }) {
   const paths = {
@@ -71,19 +72,6 @@ export default function VisitSection({ content }) {
             <span>쌍둥이닭갈비의 새로운 이름, 이둥이네 닭갈비</span>
           </p>
         </div>
-        <figure className="store-photo">
-          <img
-            src="assets/store-interior.jpg"
-            width="2048"
-            height="1536"
-            loading="lazy"
-            alt="따뜻한 조명과 나무 테이블이 있는 매장에서 손님들이 닭갈비를 즐기는 모습"
-          />
-          <figcaption>
-            <strong>함께 둘러앉는, 우리의 매장.</strong>
-            <span>쌍둥이닭갈비 매장 내부</span>
-          </figcaption>
-        </figure>
         <div className="visit-grid">
           <KakaoMap content={content} />
           <div className="store-details">
@@ -115,13 +103,23 @@ export default function VisitSection({ content }) {
                         {value || placeholder}
                       </span>
                       {field === "address" && value && (
-                        <button
-                          type="button"
-                          className="copy-address"
-                          onClick={copyAddress}
-                        >
-                          주소 복사
-                        </button>
+                        <div className="address-actions">
+                          <button
+                            type="button"
+                            className="copy-address"
+                            onClick={copyAddress}
+                          >
+                            주소 복사
+                          </button>
+                          <a
+                            className="map-directions"
+                            href={content.mapDirectionsUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            길찾기 ↗
+                          </a>
+                        </div>
                       )}
                       {field === "phone" && phoneValid && (
                         <a
@@ -154,6 +152,7 @@ export default function VisitSection({ content }) {
             </details>
           </div>
         </div>
+        <VisitGallery />
       </div>
       <div className="toast" role="status" hidden={!message}>
         {message}

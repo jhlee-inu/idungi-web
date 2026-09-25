@@ -1,4 +1,5 @@
 import Hero from "../components/Hero.jsx";
+import BrandStory from "../components/BrandStory.jsx";
 import MenuSection from "../components/MenuSection.jsx";
 import NextChapter from "../components/NextChapter.jsx";
 import VisitSection from "../components/VisitSection.jsx";
@@ -9,8 +10,9 @@ export default function HomePage() {
     <main id="main">
       <Hero />
       <MenuSection content={content} />
-      <NextChapter />
       <VisitSection content={content} />
+      <BrandStory />
+      <NextChapter />
     </main>
   );
 }

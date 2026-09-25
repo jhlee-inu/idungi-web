@@ -126,9 +126,49 @@ describe("restaurant journeys after React migration", () => {
     expect(screen.getByTitle(/카카오맵/).getAttribute("src")).toBe(
       "kakao-map.html",
     );
+    for (const link of screen.getAllByRole("link", { name: /길찾기/ })) {
+      expect(link.getAttribute("href")).toBe(content.mapDirectionsUrl);
+    }
+  });
+
+  it("puts menu and visit information before the brand story", () => {
+    render(<App />);
+    const sections = Array.from(document.querySelectorAll("main > section"));
+    expect(sections.map((section) => section.id).slice(0, 4)).toEqual([
+      "home",
+      "menu",
+      "visit",
+      "story",
+    ]);
+    expect(screen.getByRole("heading", { level: 1 }).textContent).toContain("이둥이네 닭갈비");
+  });
+
+  it("lands on a section linked from another page", () => {
+    window.history.replaceState({}, "", "/index.html#visit");
+    const scroll = vi.fn();
+    Object.defineProperty(Element.prototype, "scrollIntoView", {
+      configurable: true,
+      value: scroll,
+    });
+    try {
+      render(<App />);
+      expect(scroll).toHaveBeenCalledOnce();
+    } finally {
+      delete Element.prototype.scrollIntoView;
+    }
+  });
+
+  it("shows the restaurant interiors and park view in the visit section", () => {
+    render(<VisitSection content={content} />);
     expect(
-      screen.getByRole("link", { name: /길찾기/ }).getAttribute("href"),
-    ).toBe(content.mapDirectionsUrl);
+      screen.getByAltText("창가 좌석과 테이블이 보이는 매장 내부").getAttribute("src"),
+    ).toBe("assets/restaurant_empty.jpg");
+    expect(
+      screen.getByAltText("철판 테이블과 셀프 코너가 보이는 매장 내부").getAttribute("src"),
+    ).toBe("assets/restaurant_empty2.jpg");
+    expect(
+      screen.getByAltText("매장 창가에서 내려다보이는 수노을공원 풍경").getAttribute("src"),
+    ).toBe("assets/restaurant_view.jpg");
   });
 
   it("reports clipboard failure and enables only a valid phone number", async () => {
@@ -161,6 +201,8 @@ describe("restaurant journeys after React migration", () => {
           .getAttribute("aria-current"),
       ).toBe("page");
       expect(screen.queryByRole("button", { name: /주문|결제/ })).toBeNull();
+      expect(screen.getByRole("link", { name: "매장 메뉴 ↗" }).getAttribute("href"))
+        .toBe("index.html#menu");
     },
   );
 });

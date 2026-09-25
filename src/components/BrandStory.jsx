@@ -1,9 +1,9 @@
 export default function BrandStory() {
   return (
-    <div className={"story-strip"} id={"story"}>
+    <section className="story-strip" id="story" aria-labelledby="story-title">
       <div className={"story-intro"}>
         <span className={"tiny-label"}>{"OUR STORY · SINCE 2015"}</span>
-        <h2>
+        <h2 id="story-title">
           {"한대앞에서 시작해,"}
           <br />
           {"새솔동으로 이어온 맛."}
@@ -35,6 +35,6 @@ export default function BrandStory() {
         </span>
         <span>{"SINCE 2015 · 이둥이네 닭갈비"}</span>
       </div>
-    </div>
+    </section>
   );
 }

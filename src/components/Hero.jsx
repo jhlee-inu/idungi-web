@@ -1,5 +1,3 @@
-import BrandStory from "./BrandStory.jsx";
-
 export default function Hero() {
   return (
     <section
@@ -23,16 +21,14 @@ export default function Hero() {
         <div className={"hero-copy"}>
           <p className={"eyebrow"}>{"이둥이네 닭갈비 · SINCE 2015"}</p>
           <h1 id={"hero-title"}>
-            {"지글지글, 한 판."}
-            <br />
-            <strong>{"함께라서 맛있는 시간."}</strong>
+            이둥이네 <strong>닭갈비</strong>
           </h1>
           <p className={"hero-description"}>
-            {"한대앞에서 시작해 새솔동으로."}
+            {"지글지글, 한 판. 함께라서 맛있는 시간."}
             <br />
-            {"함께 둘러앉아 즐기는 철판 닭갈비,"}
+            {"한대앞에서 시작해 새솔동으로."}
             <br className={"mobile-only"} />
-            {" 이둥이네입니다."}
+            {" 함께 둘러앉아 즐기는 철판 닭갈비."}
           </p>
           <div className={"hero-actions"}>
             <a className={"button primary"} href={"#menu"}>
@@ -69,7 +65,6 @@ export default function Hero() {
         </a>
       </div>
 
-      <BrandStory />
     </section>
   );
 }

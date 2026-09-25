@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import BrandLogo from "./BrandLogo.jsx";
 
 const links = [
-  ["#story", "이둥이네 이야기"],
   ["#menu", "메뉴 소개"],
   ["#visit", "매장 안내"],
+  ["#story", "이둥이네 이야기"],
   ["franchise.html", "가맹 안내"],
   ["meal-kit.html", "밀키트"],
 ];
@@ -97,7 +97,8 @@ export default function Header({ page = "home" }) {
           </>
         ) : (
           <nav className="subpage-nav" aria-label="페이지 이동">
-            <a href="index.html">매장 홈</a>
+            <a href="index.html#menu">메뉴 소개</a>
+            <a href="index.html#visit">매장 안내</a>
             <a
               href="franchise.html"
               aria-current={page === "franchise" ? "page" : undefined}

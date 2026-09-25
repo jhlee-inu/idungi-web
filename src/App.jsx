@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import HomePage from "./pages/HomePage.jsx";
@@ -12,6 +13,16 @@ export default function App() {
       : filename === "meal-kit.html"
         ? "meal-kit"
         : "home";
+  useEffect(() => {
+    if (page !== "home" || !window.location.hash) return;
+    const target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+    if (!target) return;
+    const root = document.documentElement;
+    const previousBehavior = root.style.scrollBehavior;
+    root.style.scrollBehavior = "auto";
+    target.scrollIntoView();
+    root.style.scrollBehavior = previousBehavior;
+  }, [page]);
   return (
     <>
       <a className="skip-link" href="#main">

@@ -57,3 +57,22 @@ html{scroll-padding-top:140px}
 @media(max-width:1000px){.visit-grid{gap:28px}}
 @media(max-width:760px){.visit-grid{grid-template-columns:1fr}.kakao-panel .location-top{padding:18px 20px}.map-copy{padding:0 20px 22px}.map-copy h3{font-size:24px}.kakao-map-frame{height:400px}}
 @media(min-width:361px) and (max-width:760px){.site-header .brand-lockup{gap:16px}.site-header .logo-symbol,.site-header .logo-wordmark{background-size:248.36px 124.18px}.site-header .logo-symbol{width:127.4px;height:70px;background-position:-7px -30.8px}.site-header .logo-wordmark{width:115.5px;height:55.3px;background-position:-121.8px -43.68px}}
+
+.visit-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:0 0 48px}
+.visit-photos{margin-top:60px}
+.visit-photos-heading{margin-bottom:24px}
+.visit-photos-heading h3{font-size:28px;margin-top:8px}
+.sub-hero-links{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:18px}
+.sub-hero-links .text-link{font-weight:600}
+.address-actions{display:flex;align-items:center;flex-wrap:wrap;gap:8px 20px}
+.address-actions .map-directions{margin-top:6px}
+.kit-photo figcaption{position:absolute;bottom:14px;left:14px;right:14px;width:fit-content;font-size:12px;padding:6px 10px;background:#000b;color:#fff}
+.story-strip{border-bottom:1px solid var(--line)}
+.hero{min-height:580px;height:min(680px,calc(100svh - 180px))}
+.visit-photos .store-photo>img{max-height:none;object-fit:contain}
+.visit-gallery figure{min-width:0;margin:0}
+.visit-gallery img{display:block;width:100%;height:auto}
+.visit-gallery figcaption{padding-top:10px;font-size:14px;color:var(--muted)}
+@media(max-width:760px){.hero{min-height:min(570px,calc(100svh - 160px));height:auto}.visit-photos{margin-top:44px}.visit-photos-heading h3{font-size:24px}.visit-gallery{grid-template-columns:1fr;gap:24px;margin-bottom:0}.visit-gallery figcaption{font-size:13px}.subpage-nav{gap:8px;font-size:13px;white-space:nowrap}}
+@media(max-width:760px){.visit-grid .store-details{order:-1}}
+@media(max-width:360px){.hero{min-height:min(480px,calc(100svh - 220px))}.hero-copy{padding:44px 0 68px}.hero h1{margin:18px 0}.hero-actions{margin-top:18px}.hero-brand-note{margin-top:15px}}

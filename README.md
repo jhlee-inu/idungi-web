@@ -42,10 +42,11 @@ npm run dev
 | src/pages/FranchisePage.jsx | 가맹 안내 준비 페이지 |
 | src/pages/MealKitPage.jsx | 밀키트 판매 준비 페이지 |
 | src/components/Header.jsx, Footer.jsx, BrandLogo.jsx | 공통 헤더·푸터·로고 |
-| src/components/Hero.jsx, BrandStory.jsx, NextChapter.jsx | 메인 소개 영역 |
+| src/components/Hero.jsx, BrandStory.jsx, NextChapter.jsx | 메인 소개·브랜드 이야기·확장 안내 |
 | src/components/MenuSection.jsx | 메뉴 필터와 상세창 상태 |
 | src/components/MenuDialog.jsx, MenuCatalog.jsx | 상세창 및 전체 메뉴판 |
-| src/components/VisitSection.jsx, KakaoMap.jsx | 매장 정보·주소 복사·지도 |
+| src/components/VisitSection.jsx, VisitGallery.jsx, KakaoMap.jsx | 매장 정보·주소 복사·사진·지도 |
+| src/components/PreparationPage.jsx | 가맹·밀키트 준비 페이지의 공통 틀 |
 | src/data/content.json | 메뉴·가격·주소·영업시간 등 매장 데이터 |
 | src/styles/global.css | 기존 디자인과 반응형 스타일 |
 | public/assets/ | 사진·로고·폰트 |
@@ -54,6 +55,8 @@ npm run dev
 | vite.config.js | 개발·빌드·테스트 설정 |
 
 JSX는 JavaScript 안에서 화면 구조를 표현하는 React 문법입니다. TypeScript는 사용하지 않습니다.
+메인 화면은 메뉴와 매장 정보를 먼저 보여주고, 그 아래에 브랜드 이야기와 준비 중인 소식을 배치합니다.
+가맹·밀키트 페이지는 각각의 내용 객체를 공통 페이지 틀에 전달합니다.
 메뉴 필터와 선택 메뉴, 모바일 메뉴 및 복사 안내는 React 상태로 관리합니다.
 외부 라이브러리 연동과 포커스 처리를 제외하고 기존 DOM 생성·수정 스크립트는 제거했습니다.
 
